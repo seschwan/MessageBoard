@@ -8,7 +8,11 @@
 
 import UIKit
 
-class MessageThreadDetailTableViewController: UITableViewController {
+class MessageThreadTableViewController: UITableViewController {
+    
+    // Outlets
+    @IBOutlet weak var createThreadTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +36,7 @@ class MessageThreadDetailTableViewController: UITableViewController {
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -40,7 +44,13 @@ class MessageThreadDetailTableViewController: UITableViewController {
 
         return cell
     }
-    */
+    
+    // Actions
+    @IBAction func createThreadAction(_ sender: UITextField) {
+        
+    }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
